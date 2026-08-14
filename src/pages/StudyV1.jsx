@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { v1Documents, downloadFiles } from '../data/documents'
 import { guides } from '../data/guides'
+import AutoDownloadButton from '../components/AutoDownloadButton'
 
 const priorityLabels = { hot: '🔥 Rất cao', cao: 'Cao', vua: 'Vừa' }
 const priorityStyles = {
@@ -83,27 +84,22 @@ export default function StudyV1({ progress, toggleDone }) {
               </div>
             )}
 
-            <div className="flex flex-wrap gap-2 mt-3">
+            <div className="flex flex-wrap gap-2 items-center mt-3">
               {doc.links.map((link, i) => (
-                <a
-                  key={i}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[12px] font-semibold text-primary bg-primary-light dark:bg-indigo-950/50 border border-indigo-200 dark:border-indigo-800 px-2.5 py-1 rounded-lg hover:bg-primary hover:text-white transition-colors no-underline"
-                >
-                  📄 {link.label} ↗
-                </a>
+                <div key={i} className="flex items-center gap-1.5 flex-wrap">
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[12px] font-semibold text-primary bg-primary-light dark:bg-indigo-950/50 border border-indigo-200 dark:border-indigo-800 px-2.5 py-1 rounded-lg hover:bg-primary hover:text-white transition-colors no-underline"
+                  >
+                    📄 {link.label} ↗
+                  </a>
+                  {link.url.includes("thuvienphapluat.vn") && (
+                    <AutoDownloadButton url={link.url} docTitle={doc.title} />
+                  )}
+                </div>
               ))}
-              {downloadFiles[doc.id] && (
-                <a
-                  href={`/downloads/${downloadFiles[doc.id].filename}`}
-                  download
-                  className="inline-flex items-center gap-1 text-[12px] font-semibold text-success bg-success-light dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 px-2.5 py-1 rounded-lg hover:bg-success hover:text-white transition-colors no-underline"
-                >
-                  ⬇️ Tải .docx
-                </a>
-              )}
             </div>
 
             <button
