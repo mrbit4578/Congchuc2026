@@ -75,13 +75,13 @@ def get_status() -> Dict[str, Any]:
     from . import vector_store as vs
     from . import bm25_store as bs
     vs_status = vs.get_status()
-    api_key_set = bool(os.environ.get("GEMINI_API_KEY") or os.environ.get("OPENAI_API_KEY"))
+    api_key_set = bool(os.environ.get("DASHSCOPE_API_KEY") or os.environ.get("OPENAI_API_KEY"))
     return {
         "indexed": vs_status["indexed"],
         "total_chunks": vs_status["total_chunks"],
         "configured": api_key_set,
-        "embedding_model": "text-embedding-004",
-        "llm_model": "gemini-2.5-flash"
+        "embedding_model": "text-embedding-v3",
+        "llm_model": "qwen3.8-max"
     }
 
 def answer_question(
@@ -117,19 +117,20 @@ def answer_question(
             messages.append({"role": msg["role"], "content": msg["content"]})
     user_content = f"## Nguon tham khao{chr(10)}{chr(10)}{context}{chr(10)}{chr(10)}## Cau hoi{chr(10)}{question}"
     messages.append({"role": "user", "content": user_content})
-    api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("OPENAI_API_KEY")
-    client = OpenAI(base_url="https://generativelanguage.googleapis.com/v1beta/openai/", api_key=api_key)
+    api_key = os.environ.get("DASHSCOPE_API_KEY") or os.environ.get("OPENAI_API_KEY")
+    client = OpenAI(base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1", api_key=api_key)
     response = client.chat.completions.create(
-        model="gemini-2.5-flash",
+        model="qwen3.8-max",
         messages=messages,
         temperature=0.2,
-        max_tokens=1024
+        max_tokens=1024,
+        extra_body={"enable_thinking": True}
     )
     answer = response.choices[0].message.content
     return {
         "success": True,
         "answer": answer,
         "sources": sources,
-        "model": "gemini-2.5-flash",
+        "model": "qwen3.8-max",
         "chunks_used": len(retrieved)
     }

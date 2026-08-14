@@ -14,7 +14,7 @@ class QARequest(BaseModel):
     history: Optional[List[Dict[str, str]]] = None
 
 class ConfigRequest(BaseModel):
-    gemini_api_key: str
+    dashscope_api_key: str
 
 def _ensure_initialized():
     from app.services import rag_pipeline
@@ -42,16 +42,16 @@ def qa_status():
 
 @router.post("/qa/config")
 def qa_config(req: ConfigRequest):
-    os.environ["GEMINI_API_KEY"] = req.gemini_api_key
+    os.environ["DASHSCOPE_API_KEY"] = req.dashscope_api_key
     env_path = os.path.join(os.path.dirname(__file__), "..", "..", ".env")
     try:
         with open(env_path, "w") as f:
-            f.write(f"GEMINI_API_KEY={req.gemini_api_key}\n")
+            f.write(f"DASHSCOPE_API_KEY={req.dashscope_api_key}\n")
     except Exception as e:
         logger.warning(f"Could not write .env file: {e}")
     from app.services import embeddings
     embeddings._client = None
-    return {"success": True, "message": "Da luu Gemini API key."}
+    return {"success": True, "message": "Đã lưu DashScope API key."}
 
 @router.post("/qa/reindex")
 def qa_reindex(bg: BackgroundTasks):

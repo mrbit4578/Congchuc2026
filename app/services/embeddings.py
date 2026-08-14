@@ -10,21 +10,21 @@ def get_client():
     global _client
     if _client is None:
         from openai import OpenAI
-        api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("OPENAI_API_KEY")
+        api_key = os.environ.get("DASHSCOPE_API_KEY") or os.environ.get("OPENAI_API_KEY")
         if not api_key:
-            raise ValueError("GEMINI_API_KEY not set. Get free key at aistudio.google.com")
+            raise ValueError("DASHSCOPE_API_KEY not set. Get free key at dashscope.aliyuncs.com")
         _client = OpenAI(
-            base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+            base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
             api_key=api_key
         )
     return _client
 
-def get_embedding(text: str, model: str = "text-embedding-004") -> List[float]:
+def get_embedding(text: str, model: str = "text-embedding-v3") -> List[float]:
     client = get_client()
     response = client.embeddings.create(model=model, input=text)
     return response.data[0].embedding
 
-def get_embeddings_batch(texts: List[str], model: str = "text-embedding-004") -> List[List[float]]:
+def get_embeddings_batch(texts: List[str], model: str = "text-embedding-v3") -> List[List[float]]:
     client = get_client()
     all_embeddings = []
     batch_size = 50

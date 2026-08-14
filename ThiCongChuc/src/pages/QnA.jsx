@@ -73,7 +73,7 @@ export default function QnA() {
       const res = await fetch('http://localhost:8000/api/qa/config', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ gemini_api_key: apiKey })
+        body: JSON.stringify({ dashscope_api_key: apiKey })
       })
       if (res.ok) {
         setConfigured(true)
@@ -89,7 +89,7 @@ export default function QnA() {
     <div>
       <h1 className="font-heading text-[16px] font-extrabold flex items-center gap-2 mb-1">
         <span className="w-3 h-3 rounded-full bg-primary"></span>
-        Hỏi đáp nhanh - Hybrid RAG + Gemini AI
+        Hỏi đáp nhanh - Hybrid RAG + Qwen AI
       </h1>
       <p className="text-[13px] text-muted mb-4">
         Dat cau hoi ve van ban phap luat. He thong tra loi dua tren 21 tai lieu on thi, co trich dan nguon cu the.
@@ -98,12 +98,12 @@ export default function QnA() {
       {showConfig && (
         <div className="mb-4 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl p-4">
           <p className="text-[13px] font-semibold text-amber-800 dark:text-amber-300 mb-2">
-            Can cau hinh Gemini API key de su dung tinh nang hoi dap.
+            Cần cấu hình DashScope API key để sử dụng tính năng hỏi đáp.
           </p>
           <div className="flex gap-2">
             <input
               type="password"
-              placeholder="AIza..."
+              placeholder="sk-..."
               value={apiKey}
               onChange={e => setApiKey(e.target.value)}
               className="flex-1 px-3 py-2 border border-amber-300 dark:border-amber-700 rounded-lg text-[13px] bg-white dark:bg-card outline-none focus:border-primary"
@@ -112,11 +112,11 @@ export default function QnA() {
               onClick={handleConfigSubmit}
               className="px-4 py-2 bg-primary text-white rounded-lg text-[13px] font-semibold hover:bg-primary-dark transition-colors cursor-pointer"
             >
-              Luu
+              Lưu
             </button>
           </div>
           <p className="text-[11px] text-muted mt-2">
-            Lay API key mien phi tai: aistudio.google.com/apikey
+            Lấy API key miễn phí tại: dashscope.aliyuncs.com
           </p>
         </div>
       )}
