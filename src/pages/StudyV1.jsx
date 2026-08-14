@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { v1Documents } from '../data/documents'
+import { v1Documents, downloadFiles } from '../data/documents'
 
 const priorityLabels = { hot: '🔥 Rất cao', cao: 'Cao', vua: 'Vừa' }
 const priorityStyles = {
@@ -94,6 +94,15 @@ export default function StudyV1({ progress, toggleDone }) {
                   📄 {link.label} ↗
                 </a>
               ))}
+              {downloadFiles[doc.id] && (
+                <a
+                  href={`/downloads/${downloadFiles[doc.id].filename}`}
+                  download
+                  className="inline-flex items-center gap-1 text-[12px] font-semibold text-success bg-success-light dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 px-2.5 py-1 rounded-lg hover:bg-success hover:text-white transition-colors no-underline"
+                >
+                  ⬇️ Tải về
+                </a>
+              )}
             </div>
 
             <button

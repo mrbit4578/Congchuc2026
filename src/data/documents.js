@@ -524,6 +524,16 @@ export const roadmap = [
   },
 ];
 
+export const downloadFiles = {
+  "v1-1": { filename: "v1-01-luat-vien-chuc-129-2025.md", label: "Luật Viên chức 129/2025" },
+  "v1-2": { filename: "v1-02-nghi-dinh-259-2026.md", label: "NĐ 259/2026 — Tuyển dụng" },
+  "v1-3": { filename: "v1-03-luat-tccqdp-72-2025.md", label: "Luật TCCQĐP 72/2025" },
+  "kt-1": { filename: "v2-01-thong-tu-24-2024.md", label: "TT 24/2024 — Chế độ kế toán HCSN" },
+  "kt-3": { filename: "v2-03-luat-ke-toan-88-2015.md", label: "Luật Kế toán 88/2015" },
+  "kt-6": { filename: "v2-06-luat-nsgnn-89-2025.md", label: "Luật NSNN 89/2025" },
+  "kt-9": { filename: "v2-09-nghi-dinh-60-2021.md", label: "NĐ 60/2021 — Tự chủ tài chính" },
+};
+
 export const topTopics = [
   "Hành vi bị nghiêm cấm trong kế toán — Luật Kế toán Điều 13",
   "Nội dung + ký chứng từ kế toán — Luật Kế toán Điều 16–19",
