@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd ThiCongChuc && npm run build",
+  "outputDirectory": "ThiCongChuc/dist",
+  "installCommand": "cd ThiCongChuc && npm install",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
