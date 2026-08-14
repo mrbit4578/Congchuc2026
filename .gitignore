@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Browser & Downloader temporary items
+.browser_profile/
+user_cookies.json
+__pycache__/
+*.pyc
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +28,33 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables / secrets
+.env
+
+# RAG data (generated at runtime)
+app/data/chroma_db/
+app/data/bm25_index.pkl
+app/data/knowledge_base.json
+
+# Downloaded documents (too large for GitHub)
+public/downloads/
+
+# Unrelated projects
+Antigravity/
+Mrbit.TuBi/
+Notion-v1/
+Qoder/
+Siro-Trade-v1.7*
+Trade-V3/
+VATTU HOACHAT/
+coin-trade-agent*
+github-antigravity-congchuc/
+gpt_signup_hybrid-main-latest.zip
+hotmail_register.rar
+hypera/
+Tool-Reg-Hotmail-main.zip
+viralshorts-rag*
+
+# Netlify state
+.netlify/
