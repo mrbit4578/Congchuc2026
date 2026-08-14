@@ -1,15 +1,36 @@
-# Ôn thi viên chức 2026 — Trung tâm Cung ứng dịch vụ công phường Cát Lái
+# 🎯 Thi Công Chức 2026 - Ngành Kế Toán
 
-Website tĩnh tổng hợp tài liệu ôn thi viên chức 2026 (xuất từ Notion, đã tối ưu dung lượng).
+Hệ thống ôn thi công chức ngành Kế toán trực tuyến miễn phí.
 
-## Cấu trúc
+## Tính năng
 
-- Trang chủ: `index.html`
-- Đề cương trọng tâm — Vị trí Kế toán: `on-thi-vien-chuc-2026-trung-tam-cung-ung-dich-vu/de-cuong-trong-tam-vi-tri-ke-toan.html`
-- Kho tài liệu (53 văn bản): `on-thi-vien-chuc-2026-trung-tam-cung-ung-dich-vu/kho-tai-lieu-on-tap-vien-chuc-cat-lai-2026/`
-- Giao diện: nút chuyển nền **Sáng / Tối** + chế độ **tương phản cao** (`assets/theme.css`, `assets/theme.js`). Hỗ trợ tham số URL `?theme=dark|light&contrast=high|normal`.
+- 📋 **Lộ trình học 12 tuần** - Kế hoạch ôn thi khoa học từ cơ bản đến nâng cao
+- ✍️ **Ngân hàng câu hỏi** - 40+ câu trắc nghiệm bám sát đề thi thực tế
+- 📊 **Theo dõi tiến độ** - Lưu trữ kết quả học tập trên localStorage
+- 📜 **Văn bản luật** - Link trực tiếp đến nguồn chính thống (thuvienphapluat.vn)
 
-## Deploy Netlify
+## Nội dung ôn thi
 
-- Build command: *(để trống)*
-- Publish directory: `.` — đã cấu hình sẵn trong `netlify.toml`
+### Vòng 1 - Kiến thức chung
+- Hiến pháp 2013
+- Luật Cán bộ, Công chức 2008 (sửa đổi 2019)
+- Hệ thống chính trị, quản lý hành chính
+
+### Vòng 2 - Chuyên ngành Kế toán
+- Luật Kế toán 2015 (88/2015/QH13)
+- Luật Ngân sách Nhà nước 2015 (83/2015/QH13)
+- Thông tư 107/2017/TT-BTC
+- Nghị định 174/2016/NĐ-CP
+
+## Công nghệ
+- HTML5 / CSS3 / JavaScript (Vanilla)
+- Responsive Design
+- LocalStorage cho lưu tiến độ
+
+## Deploy
+- GitHub Pages / Netlify
+
+## Nguồn tham khảo
+- [Cổng TTĐT Chính phủ](https://chinhphu.vn)
+- [Bộ Tài chính](https://mof.gov.vn)
+- [Thư viện Pháp luật](https://thuvienphapluat.vn)
