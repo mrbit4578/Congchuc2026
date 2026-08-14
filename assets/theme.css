@@ -1,0 +1,87 @@
+/* ============ Theme switcher: light / dark / high-contrast ============ */
+:root { color-scheme: light; }
+html.theme-dark { color-scheme: dark; }
+
+/* Floating switcher */
+.theme-switcher {
+	position: fixed; top: 14px; right: 14px; z-index: 9999;
+	display: flex; gap: 6px; align-items: center;
+	font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+	white-space: normal;
+}
+.theme-switcher button {
+	border: 1px solid rgba(55,53,47,0.3); background: #ffffff; color: rgb(55,53,47);
+	border-radius: 999px; padding: 7px 12px; font-size: 13px; line-height: 1;
+	cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+	display: inline-flex; align-items: center; gap: 6px;
+}
+.theme-switcher button:hover { background: #f1f1ef; }
+.theme-switcher button:focus-visible { outline: 3px solid #2383e2; outline-offset: 2px; }
+.theme-switcher button[aria-pressed="true"] .tt-ico { transform: scale(1.05); }
+@media print { .theme-switcher { display: none; } }
+@media (max-width: 700px) { .theme-switcher { top: 8px; right: 8px; } }
+
+/* ============ DARK THEME ============ */
+html.theme-dark, html.theme-dark body { background: #191919; }
+html.theme-dark body { color: rgba(255,255,255,0.87); }
+html.theme-dark .theme-switcher button { background: #2c2c2c; color: rgba(255,255,255,0.87); border-color: rgba(255,255,255,0.3); }
+html.theme-dark .theme-switcher button:hover { background: #3a3a3a; }
+
+html.theme-dark table, html.theme-dark th, html.theme-dark td { border-color: rgba(255,255,255,0.18) !important; }
+html.theme-dark th { background: #242424; color: rgba(255,255,255,0.82); }
+html.theme-dark hr { border-bottom-color: rgba(255,255,255,0.18); }
+html.theme-dark blockquote { border-left-color: rgba(255,255,255,0.75); }
+html.theme-dark .source { border-color: rgba(255,255,255,0.25); }
+html.theme-dark .callout.block-color-default_background { border-color: rgba(255,255,255,0.18); }
+html.theme-dark .bookmark { border-color: rgba(255,255,255,0.25); }
+html.theme-dark figcaption { opacity: 0.65; }
+html.theme-dark code { background: rgba(255,255,255,0.12); color: #ff7369; }
+html.theme-dark .code { background: #202020; }
+html.theme-dark .checkbox.checkbox-off { border-color: rgba(255,255,255,0.6); }
+
+/* Notion text colors — dark equivalents */
+html.theme-dark .highlight-gray, html.theme-dark .block-color-gray { color: #9b9b9b !important; }
+html.theme-dark .highlight-brown, html.theme-dark .block-color-brown { color: #ba856f !important; }
+html.theme-dark .highlight-orange, html.theme-dark .block-color-orange { color: #c77d48 !important; }
+html.theme-dark .highlight-yellow, html.theme-dark .block-color-yellow { color: #ca9849 !important; }
+html.theme-dark .highlight-teal, html.theme-dark .block-color-teal, html.theme-dark .highlight-green, html.theme-dark .block-color-green { color: #529e72 !important; }
+html.theme-dark .highlight-blue, html.theme-dark .block-color-blue { color: #5e87c9 !important; }
+html.theme-dark .highlight-purple, html.theme-dark .block-color-purple { color: #9d68d3 !important; }
+html.theme-dark .highlight-pink, html.theme-dark .block-color-pink { color: #d15796 !important; }
+html.theme-dark .highlight-red, html.theme-dark .block-color-red { color: #df5452 !important; }
+
+/* Notion background colors — dark equivalents */
+html.theme-dark .highlight-gray_background, html.theme-dark .block-color-gray_background { background: #2f2f2f !important; }
+html.theme-dark .highlight-brown_background, html.theme-dark .block-color-brown_background { background: #453028 !important; }
+html.theme-dark .highlight-orange_background, html.theme-dark .block-color-orange_background { background: #5c3b23 !important; }
+html.theme-dark .highlight-yellow_background, html.theme-dark .block-color-yellow_background { background: #564328 !important; }
+html.theme-dark .highlight-teal_background, html.theme-dark .block-color-teal_background, html.theme-dark .highlight-green_background, html.theme-dark .block-color-green_background { background: #243d30 !important; }
+html.theme-dark .highlight-blue_background, html.theme-dark .block-color-blue_background { background: #143a4e !important; }
+html.theme-dark .highlight-purple_background, html.theme-dark .block-color-purple_background { background: #3c2d49 !important; }
+html.theme-dark .highlight-pink_background, html.theme-dark .block-color-pink_background { background: #4e2c3c !important; }
+html.theme-dark .highlight-red_background, html.theme-dark .block-color-red_background { background: #522e2a !important; }
+
+/* Select/status pills keep readable in dark */
+html.theme-dark [class*="select-value-color-"] { color: rgba(255,255,255,0.9); }
+
+/* ============ HIGH CONTRAST ============ */
+html.contrast-high body { font-size: 1.08em; }
+html.contrast-high a { text-decoration-thickness: 2px; }
+
+/* High contrast — light */
+html.contrast-high:not(.theme-dark) body { color: #000; background: #fff; }
+html.contrast-high:not(.theme-dark) table, html.contrast-high:not(.theme-dark) th, html.contrast-high:not(.theme-dark) td { border-color: rgba(0,0,0,0.65) !important; }
+html.contrast-high:not(.theme-dark) th { color: #000; }
+html.contrast-high:not(.theme-dark) .highlight-gray, html.contrast-high:not(.theme-dark) .block-color-gray { color: #3d3d3d !important; }
+html.contrast-high:not(.theme-dark) figcaption { opacity: 0.85; }
+html.contrast-high:not(.theme-dark) hr { border-bottom-color: rgba(0,0,0,0.5); }
+html.contrast-high:not(.theme-dark) code { color: #b91c1c; }
+
+/* High contrast — dark */
+html.contrast-high.theme-dark, html.contrast-high.theme-dark body { background: #000; }
+html.contrast-high.theme-dark body { color: #fff; }
+html.contrast-high.theme-dark table, html.contrast-high.theme-dark th, html.contrast-high.theme-dark td { border-color: rgba(255,255,255,0.6) !important; }
+html.contrast-high.theme-dark th { background: #111; color: #fff; }
+html.contrast-high.theme-dark .highlight-gray, html.contrast-high.theme-dark .block-color-gray { color: #cfcfcf !important; }
+html.contrast-high.theme-dark figcaption { opacity: 0.9; }
+html.contrast-high.theme-dark code { color: #ff9d97; }
