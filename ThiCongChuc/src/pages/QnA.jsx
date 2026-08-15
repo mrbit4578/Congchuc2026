@@ -34,7 +34,7 @@ export default function QnA() {
     setLoading(true)
     try {
       const history = messages.map(m => ({ role: m.role, content: m.content }))
-      const res = await fetch('/api/qa', {
+      const res = await fetch('/api/index', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question, history })
