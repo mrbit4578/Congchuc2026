@@ -100,7 +100,11 @@ export default function AiQA() {
         }),
       })
       const data = await response.json().catch(() => ({}))
-      if (!response.ok) throw new Error(data.error || 'Không thể nhận phản hồi từ AI.')
+      if (!response.ok) {
+        const err = new Error(data.error || 'Không thể nhận phản hồi từ AI.')
+        err.debug = data.debug
+        throw err
+      }
 
       setMessages([...nextMessages, {
         id: `assistant-${Date.now()}`,
@@ -109,7 +113,11 @@ export default function AiQA() {
         sources: data.sources || [],
       }])
     } catch (requestError) {
-      setError(requestError.message || 'Có lỗi xảy ra. Vui lòng thử lại.')
+      let msg = requestError.message || 'Có lỗi xảy ra.'
+      if (requestError.debug) {
+        msg += ` (Debug: Exists=${requestError.debug.exists}, Len=${requestError.debug.length}, Env=[${requestError.debug.envKeys}])`
+      }
+      setError(msg)
     } finally {
       setLoading(false)
     }
