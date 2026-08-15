@@ -7,6 +7,7 @@ import StudyV2 from './pages/StudyV2'
 import Quiz from './pages/Quiz'
 import Roadmap from './pages/Roadmap'
 import Topics from './pages/Topics'
+import QA from './pages/QA'
 
 function App() {
   const [progress, setProgress] = useState(() => {
@@ -36,6 +37,7 @@ function App() {
         <Route path="quiz" element={<Quiz />} />
         <Route path="lo-trinh" element={<Roadmap />} />
         <Route path="chu-de" element={<Topics />} />
+        <Route path="hoi-dap" element={<QA />} />
       </Route>
     </Routes>
   )

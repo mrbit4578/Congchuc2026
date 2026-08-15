@@ -9,6 +9,7 @@ const navItems = [
   { to: '/quiz', label: 'Kiểm tra', icon: '📝' },
   { to: '/lo-trinh', label: 'Lộ trình', icon: '🗓️' },
   { to: '/chu-de', label: 'Chủ đề', icon: '🔑' },
+  { to: '/hoi-dap', label: 'Hỏi đáp', icon: '💬' },
 ]
 
 export default function Layout() {
