@@ -96,7 +96,7 @@ async function createApiResult(method, body = {}) {
   }
 
   // Enhanced check for environment variables
-  const apiKey = process.env.DASHSCOPE_API_KEY || process.env.VITE_DASHSCOPE_API_KEY
+  const apiKey = process.env.QWEN_API_KEY || process.env.DASHSCOPE_API_KEY
   const keyExists = !!apiKey
   const keyLength = apiKey ? apiKey.length : 0
   const keyPrefix = apiKey ? apiKey.substring(0, 5) : 'none'
@@ -106,8 +106,8 @@ async function createApiResult(method, body = {}) {
     return {
       status: 500,
       payload: {
-        error: `Lỗi cấu hình: DASHSCOPE_API_KEY ${!keyExists ? 'không tồn tại' : 'quá ngắn'}.`,
-        debug: { exists: keyExists, length: keyLength, prefix: keyPrefix, envKeys: Object.keys(process.env).filter(k => k.includes('DASH') || k.includes('KEY')).join(', ') }
+        error: `Lỗi cấu hình: QWEN_API_KEY ${!keyExists ? 'không tồn tại' : 'quá ngắn'}.`,
+        debug: { exists: keyExists, length: keyLength, prefix: keyPrefix, envKeys: Object.keys(process.env).filter(k => k.includes('QWEN') || k.includes('DASH') || k.includes('KEY')).join(', ') }
       }
     }
   }
