@@ -10,6 +10,7 @@ const navItems = [
   { to: '/lo-trinh', label: 'Lộ trình', icon: '🗓️' },
   { to: '/chu-de', label: 'Chủ đề', icon: '🔑' },
   { to: '/hoi-dap', label: 'Hỏi đáp', icon: '💬' },
+  { to: '/hoi-dap-ai', label: 'Hỏi/Đáp AI', icon: '✨' },
 ]
 
 export default function Layout() {
