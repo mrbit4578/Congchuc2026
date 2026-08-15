@@ -95,9 +95,11 @@ async function createApiResult(method, body = {}) {
     return { status: 400, payload: { error: 'Câu hỏi quá dài. Vui lòng rút gọn còn tối đa 1.200 ký tự.' } }
   }
 
+  // Force redeploy to pick up new environment variables
   const apiKey = process.env.DASHSCOPE_API_KEY
-  if (!apiKey) {
-    return { status: 500, payload: { error: 'Chưa cấu hình DASHSCOPE_API_KEY trên máy chủ.' } }
+  if (!apiKey || apiKey.trim() === '') {
+    console.error('Environment variable DASHSCOPE_API_KEY is missing or empty.')
+    return { status: 500, payload: { error: 'Chưa cấu hình DASHSCOPE_API_KEY trên máy chủ. Vui lòng kiểm tra tab Environment Variables và Redeploy.' } }
   }
 
   const retrieved = retrieveDocuments(question)
