@@ -607,16 +607,17 @@ export const guides = {
       ngayHieuLuc: "01/01/2025",
       coQuan: "Bộ Tài chính",
       thayThe: "TT 107/2017/TT-BTC",
-      suaDoi: "TT 46/2025/TT-BTC (từ 01/01/2026)",
+      suaDoi: "TT 46/2025/TT-BTC (hiệu lực 01/07/2025 — Điều 2) và TT 108/2025/TT-BTC (Điều 21)",
     },
     sections: [
       {
         heading: "Phạm vi và đối tượng áp dụng",
         content: [
-          "Áp dụng cho: cơ quan nhà nước, đơn vị sự nghiệp công lập, đơn vị sự nghiệp ngoài công lập, tổ chức chính trị – xã hội, hội có sử dụng ngân sách nhà nước.",
+          "Áp dụng cho: cơ quan nhà nước (sau TT 46 — Điều 2: bỏ ngoại lệ UBND cấp xã của bản gốc khi mô tả phạm vi hiện hành), đơn vị sự nghiệp công lập, tổ chức sử dụng NSNN theo quy định. Tổ chức khác không sử dụng NSNN có thể tự nguyện áp dụng — phân biệt đối tượng bắt buộc với tự nguyện.",
           "Không áp dụng cho: doanh nghiệp (áp dụng TT 200/2014 hoặc TTDN nhỏ); hợp tác xã.",
           "Đơn vị HCSN phải tuân thủ hệ thống tài khoản, chứng từ, sổ kế toán và báo cáo tài chính theo quy định tại Thông tư này.",
-          "Đây là văn bản CỐT LÕI nhất cho vị trí kế toán hành chính sự nghiệp — chiếm tỷ trọng lớn nhất bài thi viết và phỏng vấn."
+          "Đây là văn bản CỐT LÕI nhất cho vị trí kế toán HCSN — kiến thức trọng tâm của vòng 2.",
+          "Lưu ý: đơn vị nhóm 1 (tự bảo đảm chi TX và chi ĐT) chỉ được dùng chế độ kế toán doanh nghiệp khi đáp ứng điều kiện được phép — không suy mọi đơn vị nhóm 1 đương nhiên bỏ TT 24."
         ]
       },
       {
@@ -651,7 +652,7 @@ export const guides = {
         content: [
           "Phân biệt 2 loại báo cáo: (1) Báo cáo quyết toán kinh phí NSNN — phản ánh việc sử dụng ngân sách; (2) Báo cáo tài chính — phản ánh tình hình tài sản, nguồn vốn.",
           "Báo cáo quyết toán kinh phí gồm: Bảng quyết toán kinh phí hoạt động; Bảng quyết toán kinh phí dự án; Thuyết minh quyết toán.",
-          "BCTC gồm: Bảng cân đối tài khoản; Bảng cân đối kế toán; Báo cáo thu – chi hoạt động; Báo cáo lưu chuyển tiền tệ; Thuyết minh BCTC.",
+          "Bộ BCTC theo Phụ lục IV gồm B01–B05 (trong đó có B04a). Lưu ý: Bảng cân đối tài khoản thuộc hệ sổ kế toán — không thay thế bộ BCTC.",
           "Thời hạn nộp BCTC năm: chậm nhất 90 ngày kể từ ngày kết thúc năm tài chính (tức 31/3 năm sau)."
         ]
       },
@@ -684,7 +685,7 @@ export const guides = {
           "Áp dụng cho đơn vị kế toán cấp trên (cơ quan tài chính, cơ quan chủ quản) có đơn vị kế toán trực thuộc.",
           "Ví dụ: Sở Tài chính lập BCTC hợp nhất cho toàn tỉnh; UBND cấp tỉnh lập BCTC hợp nhất của địa phương.",
           "Đơn vị kế toán cấp trên phải lập BCTC hợp nhất bao gồm số liệu của mình và tất cả đơn vị trực thuộc.",
-          "Không bao gồm số liệu của các quỹ tài chính ngoài ngân sách (quỹ bảo hiểm xã hội, quỹ hỗ trợ...)."
+          "Phạm vi loại trừ nêu đúng các số liệu nghiệp vụ BHXH/BHYT/BHTN (Điều 1) — không mở rộng thành mọi quỹ ngoài NSNN.",
         ]
       },
       {
@@ -693,6 +694,7 @@ export const guides = {
           "Bước 1: Cộng ngang các chỉ tiêu trên BCTC của đơn vị cấp trên và tất cả đơn vị trực thuộc.",
           "Bước 2: Loại trừ các giao dịch nội bộ (thu – chi nội bộ, vay mượn nội bộ, cấp phát – nhận kinh phí nội bộ).",
           "Bước 3: Lập bảng cân đối sau khi loại trừ giao dịch nội bộ — đây chính là BCTC hợp nhất.",
+          "Phân biệt: BCTC hợp nhất của đơn vị kinh tế/kiểm soát (theo TT 108) khác với Báo cáo tài chính nhà nước của cả cấp chính quyền.",
           "Giao dịch nội bộ cần loại trừ: kinh phí cấp cho đơn vị trực thuộc; thu – chi giữa các đơn vị trong cùng hệ thống; nợ phải thu/phải trả nội bộ."
         ]
       },
@@ -732,35 +734,34 @@ export const guides = {
       {
         heading: "Các hành vi bị nghiêm cấm (Điều 13)",
         content: [
-          "1. Giả mạo, khai man chứng từ kế toán; cố ý ghi sai sự thật trên chứng từ.",
-          "2. Để ngoài sổ kế toán tài sản có liên quan đến đơn vị kế toán.",
-          "3. Cung cấp thông tin, số liệu kế toán sai sự thật; cố ý lập BCTC không trung thực.",
-          "4. Hủy hoại hoặc cố ý làm hư hỏng tài liệu kế toán trước thời hạn lưu trữ.",
-          "5. Thông đồng, móc nối với khách hàng, nhà cung cấp để khai man số liệu kế toán.",
-          "6. Mua chuộc hoặc cưỡng ép người làm kế toán thực hiện hành vi vi phạm pháp luật.",
-          "Mẹo nhớ: 6 hành vi — Giả mạo / Để ngoài sổ / Sai sự thật / Hủy hoại tài liệu / Thông đồng / Mua chuộc."
+          "Điều 13 trong bản hợp nhất (25/VBHN-VPQH) có 15 khoản — không rút gọn còn 6. Phải học đủ toàn văn hoặc tra cứu khi làm bài.",
+          "Nhóm hành vi chính: giả mạo/khai man chứng từ, số liệu kế toán; để ngoài sổ tài sản, nợ phải trả của đơn vị;",
+          "  lập hai hệ thống sổ hoặc chứng từ khác nhau cho cùng một nghiệp vụ; cung cấp/công bố báo cáo có số liệu không đồng nhất trong cùng kỳ;",
+          "  hủy hoại tài liệu kế toán trước thời hạn lưu trữ; thuê/mượn/cho thuê chứng chỉ kế toán viên, kiểm toán viên;",
+          "  lợi dụng chức vụ ép buộc người làm kế toán vi phạm; người đại diện theo pháp luật không tổ chức bộ máy kế toán, không kiểm kê tài sản.",
+          "Tra toàn văn 15 khoản tại 25/VBHN-VPQH trước kỳ thi."
         ]
       },
       {
-        heading: "Chứng từ kế toán (Điều 16–21)",
+        heading: "Chứng từ kế toán (Điều 16–18)",
         content: [
           "Chứng từ kế toán là giấy tờ hoặc phương tiện điện tử phản ánh nghiệp vụ kinh tế, tài chính phát sinh (Điều 16).",
-          "Nội dung bắt buộc trên chứng từ (Điều 17): tên, số hiệu; ngày tháng lập; tên, địa chỉ đơn vị; nội dung nghiệp vụ; số tiền; chữ ký người lập, duyệt, phụ trách kế toán.",
-          "Chứng từ phải được lập đủ số liên theo quy định; liên gốc dùng để ghi sổ (Điều 18).",
-          "Ký chứng từ: phải dùng mực không phai; không dùng mực đỏ hoặc bút chì (trừ trường hợp quy định); chữ ký phải rõ ràng (Điều 19).",
+          "Nội dung bắt buộc trên chứng từ (Điều 16): tên, số hiệu; ngày tháng lập; tên, địa chỉ đơn vị; nội dung nghiệp vụ; số tiền; chữ ký người lập, duyệt, phụ trách kế toán.",
+          "Chứng từ điện tử có giá trị pháp lý tương đương chứng từ giấy khi đáp ứng điều kiện về chữ ký điện tử (Điều 17).",
+          "Chứng từ sai: sửa theo Điều 18 — không tẩy xóa; ký xác nhận sau khi cải chính. Tách bạch với sửa sổ kế toán (Điều 27); sổ kế toán dạng điện tử khi sai sót dùng phương pháp điều chỉnh.",
           "Chứng từ điện tử có giá trị pháp lý tương đương chứng từ giấy nếu đáp ứng điều kiện về chữ ký điện tử (Điều 17 khoản 7)."
         ]
       },
       {
-        heading: "Sổ kế toán và phương pháp sửa chữa (Điều 24–28)",
+        heading: "Sổ kế toán và phương pháp sửa sổ (Điều 24–28)",
         content: [
           "Sổ kế toán dùng để ghi chép, hệ thống hóa nghiệp vụ kinh tế phát sinh theo tài khoản kế toán (Điều 24).",
           "Các hình thức sổ kế toán: Nhật ký chung; Nhật ký – Sổ cái; Chứng từ ghi sổ; Nhật ký – Chứng từ.",
-          "3 phương pháp sửa chữa sổ kế toán khi có sai sót (Điều 27):",
+          "3 phương pháp sửa sổ kế toán khi có sai sót (Điều 27) — khác với sửa chứng từ (Điều 18):",
           "  (1) Ghi sửa trực tiếp: gạch chéo dòng sai, ghi dòng đúng bên trên, ký xác nhận — áp dụng khi ghi sai trước khi khóa sổ.",
           "  (2) Ghi số âm (trong ngoặc đơn): ghi bút toán đảo ngược lại nghiệp vụ sai — áp dụng khi đã khóa sổ hoặc ghi sai vào sổ cái.",
           "  (3) Ghi bổ sung: lập chứng từ và bút toán bổ sung phần thiếu — áp dụng khi bỏ sót nghiệp vụ.",
-          "Mẹo nhớ: 'Gạch sửa / Ghi âm / Ghi bổ' — tùy thời điểm phát hiện sai sót."
+          "Mẹo nhớ: 'Gạch sửa / Ghi âm / Ghi bổ' — tùy thời điểm phát hiện sai sót. Sổ kế toán dạng điện tử khi sai sót dùng phương pháp điều chỉnh."
         ]
       },
       {
@@ -775,7 +776,7 @@ export const guides = {
       {
         heading: "Lưu trữ tài liệu kế toán (Điều 41) và kiểm kê tài sản (Điều 40)",
         content: [
-          "Thời hạn lưu trữ tài liệu kế toán: 5 năm (chứng từ, sổ kế toán chi tiết không quan trọng); 10 năm (sổ cái, BCTC quý); vĩnh viễn (BCTC năm đã quyết toán, sổ cái tổng hợp).",
+          "Thời hạn lưu trữ tài liệu kế toán: 10 năm — chứng từ dùng trực tiếp để ghi sổ và lập BCTC, sổ kế toán và BCTC năm thông thường; 5 năm — nhóm tài liệu gián tiếp (không dùng trực tiếp để ghi sổ/lập BCTC); vĩnh viễn — tài liệu có tính lịch sử, ý nghĩa đặc biệt theo quy định. Chi tiết tại Điều 12–14 NĐ 174/2016.",
           "Tài liệu kế toán phải được bảo quản an toàn, không được để hư hỏng, mất mát.",
           "Kiểm kê tài sản (Điều 40): đơn vị phải kiểm kê tài sản ít nhất 1 lần/năm (cuối năm tài chính); kiểm kê đột xuất khi có yêu cầu của cơ quan nhà nước hoặc khi thay đổi kế toán trưởng.",
           "Kết quả kiểm kê phải được lập biên bản; nếu chênh lệch so với sổ sách phải xử lý theo quy định."
@@ -785,7 +786,7 @@ export const guides = {
         heading: "Kế toán trưởng và người không được làm kế toán (Điều 52–55)",
         content: [
           "Kế toán trưởng là người đứng đầu bộ máy kế toán, chịu trách nhiệm về toàn bộ công tác kế toán của đơn vị (Điều 53).",
-          "Tiêu chuẩn kế toán trưởng: trình độ đại học trở lên chuyên ngành kế toán; có chứng chỉ bồi dưỡng kế toán trưởng; có ít nhất 5 năm kinh nghiệm.",
+          "Tiêu chuẩn kế toán trưởng (Điều 54 bản hợp nhất): trình độ đại học trở lên chuyên ngành kế toán; có chứng chỉ bồi dưỡng kế toán trưởng; thời gian thực tế làm công tác kế toán ít nhất 2 năm (trình độ đại học trở lên) hoặc 3 năm (trung cấp, cao đẳng) — kèm tiêu chuẩn và điều kiện theo loại đơn vị.",
           "Những người không được làm kế toán (Điều 52): cha/mẹ, vợ/chồng, con, anh/chị/em ruột của người đại diện theo pháp luật hoặc người quản lý, điều hành, phụ trách tài chính (trừ DNTN, công ty TNHH 1 thành viên do cá nhân làm chủ).",
           "Kế toán viên bị truy cứu trách nhiệm hình sự thì không được làm kế toán trong thời gian 5 năm kể từ ngày chấp hành xong hình phạt."
         ]
@@ -806,9 +807,9 @@ export const guides = {
       {
         heading: "Thời hạn lưu trữ tài liệu kế toán (Điều 12–14)",
         content: [
-          "Lưu trữ tối thiểu 5 năm (Điều 12): chứng từ kế toán sử dụng trực tiếp để ghi sổ nhưng không dùng làm căn cứ lập BCTC năm; sổ kế toán chi tiết; báo cáo kiểm kê.",
-          "Lưu trữ tối thiểu 10 năm (Điều 13): chứng từ dùng để lập BCTC năm; sổ kế toán tổng hợp; BCTC quý; hồ sơ quyết toán.",
-          "Lưu trữ vĩnh viễn (Điều 14): BCTC năm đã có quyết toán; sổ cái; sổ nhật ký; hồ sơ kiểm kê đặc biệt quan trọng.",
+          "Lưu trữ tối thiểu 10 năm (Điều 13): chứng từ kế toán dùng trực tiếp để ghi sổ và lập BCTC; sổ kế toán; BCTC năm thông thường — nhóm trực tiếp, không rút xuống 5 năm.",
+          "Lưu trữ tối thiểu 5 năm (Điều 12): tài liệu kế toán dùng trong quản lý, điều hành thường xuyên, KHÔNG dùng trực tiếp để ghi sổ và lập BCTC — nhóm gián tiếp.",
+          "Lưu trữ vĩnh viễn (Điều 14): tài liệu có tính lịch sử, ý nghĩa quan trọng về kinh tế, quốc phòng, an ninh.",
           "Thời hạn lưu trữ tính từ ngày kết thúc kỳ kế toán năm. Tài liệu lưu trữ vĩnh viễn phải được bảo quản đặc biệt."
         ]
       },
@@ -861,7 +862,7 @@ export const guides = {
       ngayBanHanh: "29/11/2024",
       ngayHieuLuc: "01/01/2025 (một số điều)",
       coQuan: "Quốc hội khóa XV",
-      noiDung: "Sửa đổi 9 luật: Chứng khoán, Kế toán, NSNN, Thuế TNCN, Quản lý thuế, Đầu tư công, Đầu tư, PPP, Quản lý tài sản công",
+      noiDung: "Sửa đổi 9 luật: Chứng khoán, Kế toán, Kiểm toán độc lập, NSNN, Tài sản công, Quản lý thuế, Thuế TNCN, Dự trữ quốc gia, Xử lý VPHC",
     },
     sections: [
       {
@@ -869,16 +870,15 @@ export const guides = {
         content: [
           "Quốc hội thông qua ngày 29/11/2024, sửa đổi 9 luật nhằm đồng bộ hóa hệ thống pháp luật.",
           "Mẹo học: KHÔNG cần học riêng luật này — học qua bản hợp nhất của từng luật gốc đã được sửa đổi.",
-          "Các luật được sửa: Luật Chứng khoán, Luật Kế toán, Luật NSNN 83/2015, Luật Thuế TNCN, Luật Quản lý thuế, Luật Đầu tư công, Luật Đầu tư, Luật PPP, Luật Quản lý tài sản công."
+          "Các luật được sửa (Điều 1–9): Luật Chứng khoán, Luật Kế toán, Luật Kiểm toán độc lập, Luật NSNN 83/2015, Luật Quản lý, sử dụng tài sản công, Luật Quản lý thuế, Luật Thuế TNCN, Luật Dự trữ quốc gia, Luật Xử lý vi phạm hành chính."
         ]
       },
       {
         heading: "Nội dung sửa đổi Luật Kế toán 88/2015",
         content: [
-          "Bổ sung quy định về chuẩn mực kế toán Việt Nam: Bộ Tài chính ban hành chuẩn mực kế toán dựa trên thông lệ quốc tế (IFRS).",
-          "Bổ sung quy định về chứng từ điện tử: công nhận giá trị pháp lý của chứng từ kế toán điện tử; quy định về chữ ký số, hóa đơn điện tử.",
-          "Hoàn thiện quy định về kế toán quản trị: đơn vị phải tổ chức hệ thống kế toán quản trị phục vụ ra quyết định nội bộ.",
-          "Quy định mới về kiểm toán nội bộ: đơn vị kế toán có quy mô lớn phải tổ chức bộ phận kiểm toán nội bộ."
+          "Học phần sửa tại Điều 2 Luật 56/2024 qua bản hợp nhất 25/VBHN-VPQH — không tự quy cho Luật 56 nội dung IFRS hay kiểm toán nội bộ khi chưa có căn cứ.",
+          "Cách học đúng: đối chiếu từng khoản sửa tại Điều 2 với điều tương ứng trong bản hợp nhất; ghi nhớ điều/khoản thay đổi thay vì diễn giải tự do.",
+          "Hiệu lực sửa đổi: chung 01/01/2025, có ngoại lệ tại Điều 10 Luật 56."
         ]
       },
       {
@@ -935,11 +935,11 @@ export const guides = {
       {
         heading: "Chu trình ngân sách nhà nước",
         content: [
-          "Khâu 1 — Lập dự toán: xây dựng kế hoạch thu – chi cho năm tài chính tiếp theo. Thời gian: trước ngày 31/5 hàng năm, các đơn vị lập dự toán gửi cơ quan tài chính.",
+          "Khâu 1 — Lập dự toán: xây dựng kế hoạch thu – chi cho năm tài chính tiếp theo; đơn vị lập dự toán gửi cơ quan tài chính cùng cấp tổng hợp trình UBND, HĐND phê duyệt (hạn nộp gắn theo chủ thể và căn cứ cụ thể, không dùng một mốc chung).",
           "Khâu 2 — Chấp hành: tổ chức thu NSNN (thu thuế, phí, lệ phí); phân bổ, giao dự toán chi; thực hiện chi theo dự toán được giao.",
           "Khâu 3 — Kế toán, kiểm toán: ghi chép, phản ánh tình hình thu – chi; kiểm toán NSNN bởi Kiểm toán Nhà nước.",
           "Khâu 4 — Quyết toán: tổng kết thu – chi thực tế trong năm; lập báo cáo quyết toán; thẩm tra và phê duyệt quyết toán.",
-          "Thời hạn quyết toán năm: chậm nhất 18 tháng sau khi kết thúc năm ngân sách."
+          "Chuyển tiếp (Điều 77–78 bản hợp nhất): quyết toán năm 2024 dùng luật cũ; lập dự toán năm 2026 dùng luật mới — khi làm bài phải đọc đúng năm ngân sách và loại nhiệm vụ.",
         ]
       },
       {
@@ -955,9 +955,9 @@ export const guides = {
       {
         heading: "Quản lý nợ công và bội chi",
         content: [
-          "Bội chi NSNN: phần chênh lệch giữa tổng chi vượt tổng thu của NSTW; được bù đắp bằng vay nợ.",
+          "Bội chi NSNN: phần chênh lệch giữa tổng chi vượt tổng thu; được bù đắp bằng vay nợ theo quy định.",
           "Hạn mức vay nợ: Quốc hội quyết định trần nợ công, trần bội chi hàng năm.",
-          "NSĐP không được vay nợ để bù đắp bội chi (trừ trường hợp phát hành trái phiếu chính quyền địa phương theo quy định).",
+          "Luật có bội chi ngân sách cấp tỉnh với điều kiện riêng (Điều 4, 6, 9 bản hợp nhất 89/VBHN-VPQH) — không viết mọi địa phương bị cấm vay; cấp xã không đồng nhất với cấp tỉnh.",
           "Quản lý nợ công: Bộ Tài chính là đầu mối; phải công bố báo cáo nợ công định kỳ hàng năm."
         ]
       }
@@ -970,7 +970,7 @@ export const guides = {
       soHieu: "73/2026/NĐ-CP",
       loai: "Nghị định",
       ngayBanHanh: "10/3/2026",
-      ngayHieuLuc: "Từ ngày ban hành",
+      ngayHieuLuc: "Từ năm ngân sách 2026; một số quy định từ 01/07/2025 (Điều 51)",
       coQuan: "Chính phủ",
       thayThe: "NĐ 163/2016, NĐ 45/2017, NĐ 149/2025",
     },
@@ -990,7 +990,7 @@ export const guides = {
           "Quy trình lập dự toán: đơn vị sử dụng NSNN lập dự toán thu – chi → gửi cơ quan tài chính cùng cấp → tổng hợp trình UBND → HĐND phê duyệt.",
           "Nguyên tắc lập: dự toán thu phải tích cực, khả thi; dự toán chi phải tiết kiệm, hiệu quả, đúng chính sách.",
           "Dự toán chi phải phân bổ theo mục lục ngân sách (MLNS): chương, loại, khoản, mục, tiểu mục, nội dung kinh tế.",
-          "Thời hạn lập dự toán: trước 31/5 hàng năm, đơn vị cấp cơ sở lập dự toán năm sau gửi cơ quan cấp trên."
+          "Thời hạn lập dự toán: theo quy định phân theo chủ thể/căn cứ — không dùng một mốc chung cho mọi đơn vị."
         ]
       },
       {
@@ -1008,7 +1008,7 @@ export const guides = {
         content: [
           "Cuối năm tài chính, đơn vị sử dụng NSNN phải lập báo cáo quyết toán kinh phí đã sử dụng.",
           "Quy trình quyết toán: đơn vị lập báo cáo → gửi cơ quan tài chính thẩm định → cơ quan tài chính tổng hợp → trình UBND → HĐND phê duyệt.",
-          "Thời hạn nộp quyết toán năm của đơn vị sử dụng NSNN: chậm nhất 60 ngày kể từ ngày kết thúc năm ngân sách (tức 28/2 năm sau).",
+          "Thời hạn nộp báo cáo quyết toán: phân theo chủ thể và căn cứ (tách BCTC 90 ngày khỏi báo cáo quyết toán) — không dùng một mốc 60 ngày/28/02 chung.",
           "Thời hạn quyết toán NSNN: chậm nhất 18 tháng sau khi kết thúc năm ngân sách.",
           "Kinh phí không sử dụng hết trong năm: hủy dự toán (trừ một số trường hợp được chuyển nguồn theo quy định)."
         ]
@@ -1041,7 +1041,7 @@ export const guides = {
         content: [
           "Hướng dẫn chi tiết thi hành NĐ 73/2026/NĐ-CP về Luật NSNN 89/2025.",
           "Đây là văn bản 'sát việc nhất' đối với kế toán cấp xã — hướng dẫn cụ thể cách lập dự toán, phân bổ, thu – chi, quyết toán.",
-          "Hiệu lực từ 25/3/2026; áp dụng cho năm ngân sách 2026 trở đi.",
+          "Hiệu lực từ 25/3/2026; áp dụng từ năm ngân sách 2026. Điều kiện áp dụng (Điều 37–38): một số quy định phân cấp nguồn thu áp dụng từ năm ngân sách 2027 (có ngoại lệ tiền sử dụng/thuê đất); quyết toán 2025 và phần thưởng vượt thu có chuyển tiếp riêng.",
           "Bộ ba văn bản: Luật 89/2025 → NĐ 73/2026 → TT 26/2026 — tạo thành khung pháp lý hoàn chỉnh về NSNN."
         ]
       },
@@ -1068,7 +1068,7 @@ export const guides = {
         content: [
           "Nội dung công khai: (1) Dự toán thu – chi ngân sách xã đã được HĐND phê duyệt; (2) Tình hình thực hiện dự toán thu – chi hàng quý, 6 tháng, năm; (3) Quyết toán ngân sách xã đã được HĐND phê duyệt; (4) Các khoản đóng góp của Nhân dân (nếu có).",
           "Hình thức công khai: niêm yết tại trụ sở UBND xã; thông báo tại hội nghị cử tri; đăng trên cổng thông tin điện tử (nếu có); phát trên loa truyền thanh xã.",
-          "Thời hạn công khai: dự toán — trong vòng 15 ngày kể từ ngày HĐND phê duyệt; quyết toán — trong vòng 15 ngày kể từ ngày HĐND phê duyệt quyết toán.",
+          "Thời hạn công khai: theo Điều 24–36 TT 26, phân theo loại ngân sách/đơn vị và sự kiện công khai — không áp một hạn 15 ngày duy nhất cho mọi trường hợp.",
           "Công dân có quyền khiếu nại, tố cáo nếu phát hiện sai phạm trong quản lý, sử dụng ngân sách xã."
         ]
       },
@@ -1076,7 +1076,7 @@ export const guides = {
         heading: "Quyết toán ngân sách cấp xã",
         content: [
           "Cuối năm, bộ phận tài chính – kế toán xã lập báo cáo quyết toán thu – chi ngân sách xã.",
-          "Quy trình: kế toán xã lập báo cáo → UBND xem xét → trình HĐND phê duyệt quyết toán → gửi Phòng Tài chính – Kế hoạch (cấp huyện cũ) hoặc cơ quan tài chính cấp tỉnh thẩm định.",
+          "Quy trình: kế toán xã lập báo cáo → UBND xem xét → trình HĐND phê duyệt quyết toán → gửi cơ quan/đơn vị cấp trên theo cơ cấu tổ chức và phân cấp hiện hành thẩm định.",
           "Thời hạn nộp quyết toán: theo quy định tại NĐ 73/2026 và TT 26/2026.",
           "Kinh phí không sử dụng hết: xử lý theo quy định — hủy dự toán hoặc chuyển nguồn (nếu được phép)."
         ]
@@ -1101,7 +1101,7 @@ export const guides = {
           "Nhóm 1: ĐVSNCL tự bảo đảm toàn bộ chi thường xuyên và chi đầu tư (tự chủ hoàn toàn). Ví dụ: bệnh viện lớn, trường đại học có nguồn thu dịch vụ mạnh.",
           "Nhóm 2: ĐVSNCL tự bảo đảm toàn bộ chi thường xuyên (tự chủ chi thường xuyên). Ví dụ: trung tâm dịch vụ công có nguồn thu ổn định.",
           "Nhóm 3: ĐVSNCL tự bảo đảm một phần chi thường xuyên (tự chủ một phần). Ví dụ: trung tâm cung ứng dịch vụ công phường — vừa có thu dịch vụ vừa được NSNN cấp.",
-          "Nhóm 4: ĐVSNCL do NSNN bảo đảm toàn bộ chi thường xuyên và chi đầu tư (chưa tự chủ). Ví dụ: đơn vị sự nghiệp phục vụ quản lý nhà nước, không có nguồn thu dịch vụ.",
+          "Nhóm 4: ĐVSNCL do NSNN bảo đảm chi thường xuyên (Điều 9 khoản 4 NĐ 60) — không định nghĩa là đương nhiên bao cấp toàn bộ mọi khoản chi đầu tư. Ví dụ: đơn vị sự nghiệp phục vụ quản lý nhà nước, không có nguồn thu dịch vụ.",
           "Tiêu chí phân nhóm: tỷ lệ tự bảo đảm chi thường xuyên = (Thu sự nghiệp + Thu khác) / Tổng chi thường xuyên x 100%."
         ]
       },
@@ -1120,10 +1120,9 @@ export const guides = {
         heading: "Phân phối kết quả tài chính — trích lập các quỹ",
         content: [
           "Sau khi bù đắp chi phí, nộp thuế (nếu có), đơn vị phân phối kết quả tài chính theo thứ tự:",
-          "1. Trích lập Quỹ phát triển hoạt động sự nghiệp (Quỹ PTHĐSN): tối thiểu 25% đối với nhóm 1, 2; tối thiểu 10% đối với nhóm 3.",
+          "1. Trích lập Quỹ phát triển hoạt động sự nghiệp (Quỹ PTHĐSN): nhóm 1, 2 tối thiểu 25%; nhóm 3 theo ba khoảng mức tự bảo đảm chi thường xuyên — tối thiểu 20%/15%/10% (tra Điều 14, 18 NĐ 60; phân biệt với mức 25% của nhóm 1–2).",
           "2. Trích lập Quỹ bổ sung thu nhập: chi thêm cho viên chức ngoài lương.",
-          "3. Trích lập Quỹ khen thưởng: không quá 3 tháng lương bình quân thực hiện.",
-          "4. Trích lập Quỹ phúc lợi: không quá 2,5 tháng lương bình quân thực hiện.",
+          "3–4. Trích lập Quỹ khen thưởng và Quỹ phúc lợi: trần áp dụng trên TỔNG hai quỹ (không áp riêng từng quỹ); căn cứ tiền lương và thu nhập tăng thêm bình quân thực hiện sau sửa đổi (NĐ 111/2025 Điều 1 khoản 9.b, 12.b).",
           "Phần còn lại (nếu có): chuyển sang năm sau hoặc bổ sung Quỹ PTHĐSN.",
           "Mẹo nhớ: 'Phát triển trước, rồi thu nhập, rồi khen thưởng, phúc lợi' — viết tắt: PT-TN-KT-PL."
         ]
@@ -1139,12 +1138,12 @@ export const guides = {
         ]
       },
       {
-        heading: "Áp dụng cho Trung tâm Cung ứng DVC phường Cát Lái",
+        heading: "Tình huống đơn vị cụ thể — chưa xác minh",
         content: [
-          "Trung tâm Cung ứng DVC phường Cát Lái là ĐVSNCL — khả năng thuộc nhóm 3 (tự bảo đảm một phần chi thường xuyên).",
-          "Nguồn tài chính: NSNN cấp (chi thường xuyên) + thu từ phí dịch vụ công (cấp giấy tờ, chứng thực...).",
-          "Kế toán tại Trung tâm phải thực hiện: hạch toán thu – chi theo TT 24/2024; lập BCTC và báo cáo quyết toán kinh phí.",
-          "Phân phối kết quả: trích lập Quỹ PTHĐSN (>= 10% nếu nhóm 3), Quỹ bổ sung thu nhập, Quỹ khen thưởng, Quỹ phúc lợi."
+          "Chưa xác minh: quyết định thành lập, chức năng, giao tự chủ, giao dự toán và quy định từng khoản thu của một trung tâm cụ thể.",
+          "Không suy nhóm tự chủ (nhóm 3 hay nhóm khác) hoặc danh mục thu chỉ từ tên trung tâm.",
+          "Khi có quyết định: xác định tư cách đơn vị kế toán → nhóm tự chủ theo NĐ 60 (Điều 9–10) → phương án tự chủ (Điều 35) → nguồn thu được giữ lại → hạch toán theo TT 24.",
+          "Trích quỹ và phân phối kết quả chỉ tính sau khi đã xác định đúng nhóm theo quyết định giao."
         ]
       }
     ]
@@ -1156,7 +1155,7 @@ export const guides = {
       soHieu: "111/2025/NĐ-CP",
       loai: "Nghị định",
       ngayBanHanh: "22/5/2025",
-      ngayHieuLuc: "01/7/2025",
+      ngayHieuLuc: "07/07/2025 — áp dụng từ năm ngân sách 2025",
       coQuan: "Chính phủ",
       suaDoi: "NĐ 60/2021/NĐ-CP",
     },
@@ -1184,17 +1183,17 @@ export const guides = {
         content: [
           "Trước sửa đổi: cơ quan quản lý cấp trên giao quyền tự chủ tài chính cho ĐVSNCL theo đề nghị của đơn vị.",
           "Sau sửa đổi: việc giao quyền tự chủ tài chính phải căn cứ vào kết quả xác định mức độ tự bảo đảm chi thường xuyên của đơn vị.",
-          "Thời hạn giao quyền: 3 năm (trước đây là hàng năm); giúp đơn vị chủ động hơn trong kế hoạch tài chính trung hạn.",
+          "Thời kỳ ổn định của phương án tự chủ: 05 năm theo Điều 35 đã sửa (NĐ 111 Điều 1 khoản 23) — kèm điều kiện và ngoại lệ được điều chỉnh trong kỳ.",
           "Đơn vị được giao quyền tự chủ phải xây dựng phương án hoạt động, cam kết mục tiêu, chỉ tiêu cụ thể."
         ]
       },
       {
         heading: "Tác động đến đơn vị sự nghiệp công lập",
         content: [
-          "NĐ 111/2025 tạo thuận lợi cho ĐVSNCL: thời hạn giao quyền tự chủ dài hơn (3 năm), danh mục DVSNC thống nhất hơn.",
+          "NĐ 111/2025 tạo thuận lợi cho ĐVSNCL: thời kỳ ổn định phương án tự chủ 05 năm, danh mục DVSNC thống nhất hơn.",
           "Giá dịch vụ được điều chỉnh linh hoạt hơn, nhưng phải bảo đảm an sinh xã hội cho đối tượng yếu thế.",
           "Kế toán tại ĐVSNCL cần cập nhật: cách xác định mức tự bảo đảm mới, cách tính giá dịch vụ, cách phân phối kết quả tài chính.",
-          "Đơn vị cần xây dựng phương án tự chủ tài chính trung hạn (3 năm) trình cơ quan quản lý phê duyệt."
+          "Đơn vị cần xây dựng phương án tự chủ tài chính cho thời kỳ ổn định 05 năm trình cơ quan quản lý phê duyệt."
         ]
       }
     ]
@@ -1214,10 +1213,10 @@ export const guides = {
       {
         heading: "3 chức danh nghề nghiệp kế toán",
         content: [
-          "Kế toán viên chính (hạng I): CDNN cao nhất trong ngành kế toán; mã số V.06.03.06; hệ số lương từ 4,40 đến 6,78 (A1 bậc cao).",
-          "Kế toán viên (hạng III): CDNN phổ biến nhất; mã số V.06.03.07; hệ số lương từ 2,34 đến 4,98 (A1). Đây là vị trí thí sinh dự tuyển.",
-          "Kế toán viên trung cấp (hạng IV): CDNN thấp nhất; mã số V.06.03.08; hệ số lương từ 1,86 đến 4,06 (A0).",
-          "Lưu ý: không còn 'kế toán viên cao cấp' (hạng II) trong hệ thống CDNN kế toán mới."
+          "Kế toán viên chính (hạng II): mã số V.06.030.",
+          "Kế toán viên (hạng III): mã số V.06.031. Đây là vị trí thí sinh dự tuyển.",
+          "Kế toán viên trung cấp (hạng IV): mã số V.06.032.",
+          "Tra cứu hạng, mã, tiêu chuẩn chi tiết tại Điều 3 TT 66/2024."
         ]
       },
       {
@@ -1225,8 +1224,7 @@ export const guides = {
         content: [
           "Trình độ đào tạo: tốt nghiệp đại học trở lên chuyên ngành kế toán, kiểm toán, tài chính.",
           "Chứng chỉ bồi dưỡng: chứng chỉ bồi dưỡng theo tiêu chuẩn CDNN kế toán viên (hạng III).",
-          "Trình độ tin học: đạt chuẩn kỹ năng sử dụng CNTT cơ bản (theo TT 03/2014/TT-BTTTT).",
-          "Trình độ ngoại ngữ: đạt năng lực ngoại ngữ bậc 2 khung năng lực ngoại ngữ Việt Nam (hoặc tương đương).",
+          "Năng lực tin học, ngoại ngữ: diễn đạt theo yêu cầu của vị trí việc làm (Điều 4–6 TT 66) — không suy thành chứng chỉ ngoại ngữ bậc 2 bắt buộc cho mọi trường hợp.",
           "Kinh nghiệm: không yêu cầu kinh nghiệm công tác đối với ngạch kế toán viên hạng III (tuy nhiên cần hoàn thành tập sự)."
         ]
       },
@@ -1257,6 +1255,97 @@ export const guides = {
           "Thăng hạng từ kế toán viên (hạng III) lên kế toán viên chính (hạng I): cần có bằng thạc sĩ trở lên hoặc bằng đại học + thời gian giữ hạng III tối thiểu 9 năm + chứng chỉ bồi dưỡng hạng I.",
           "Thăng hạng thông qua hình thức thi hoặc xét thăng hạng do cơ quan có thẩm quyền tổ chức.",
           "Đây là 'chân dung năng lực' mà giám khảo phỏng vấn Vòng 2 đối chiếu khi đánh giá thí sinh."
+        ]
+      }
+    ]
+  },
+
+  "kt-12": {
+    title: "Thông tư 46/2025/TT-BTC — Sửa đổi, bổ sung TT 24/2024",
+    info: {
+      soHieu: "46/2025/TT-BTC",
+      loai: "Thông tư",
+      ngayBanHanh: "20/6/2025",
+      ngayHieuLuc: "01/07/2025",
+      coQuan: "Bộ Tài chính",
+      suaDoi: "TT 24/2024/TT-BTC (Điều 2)",
+    },
+    sections: [
+      {
+        heading: "Điểm sửa quan trọng nhất (Điều 2)",
+        content: [
+          "Sửa phạm vi áp dụng của TT 24: điểm a khoản 1 Điều 2 là cơ quan nhà nước — bỏ ngoại lệ UBND cấp xã của bản gốc khi mô tả phạm vi hiện hành.",
+          "Lý do: tổ chức chính quyền địa phương hai cấp — phạm vi áp dụng TT 24 được cập nhật theo cơ cấu mới.",
+          "Đọc TT 24 phải luôn đối chiếu TT 46: không học nguyên cấu trúc/phạm vi của bản TT 24 ban đầu."
+        ]
+      },
+      {
+        heading: "Cách học đúng phiên bản",
+        content: [
+          "Mốc nghiên cứu của bộ này: 03/10/2026. Khi làm bài, ghi rõ đang áp dụng phiên bản sau TT 46.",
+          "Ngoài TT 46, TT 24 còn được sửa tại Điều 21 TT 108/2025 — tra cứu song song cả hai.",
+          "Văn bản hợp nhất không được đặt ngày hiệu lực giả: ngày hiệu lực của hợp nhất là ngày hiệu lực của các văn bản gốc thành phần."
+        ]
+      }
+    ]
+  },
+
+  "kt-13": {
+    title: "25/VBHN-VPQH (26/02/2025) — Văn bản hợp nhất Luật Kế toán",
+    info: {
+      soHieu: "25/VBHN-VPQH",
+      loai: "Văn bản hợp nhất (tra cứu)",
+      ngayBanHanh: "26/02/2025",
+      ngayHieuLuc: "Không có ngày hiệu lực riêng — theo các văn bản gốc",
+      coQuan: "Văn phòng Quốc hội",
+      hopNhat: "Luật 88/2015 + Điều 2 Luật 56/2024",
+    },
+    sections: [
+      {
+        heading: "Vì sao phải tra cứu bản hợp nhất",
+        content: [
+          "Luật Kế toán 88/2015 đã được sửa tại Điều 2 Luật 56/2024 (hiệu lực 01/01/2025, ngoại lệ Điều 10).",
+          "Học bản 2015 nguyên gốc sẽ thiếu các khoản sửa — phải tra cứu bản hợp nhất khi làm bài.",
+          "Đây là văn bản tra cứu, không phải luật mới: không đặt ngày hiệu lực giả cho bản hợp nhất."
+        ]
+      },
+      {
+        heading: "Các điều hay hỏi (bản hợp nhất)",
+        content: [
+          "Điều 13: 15 khoản hành vi cấm — học đủ toàn văn, không rút còn 6.",
+          "Điều 16: nội dung chứng từ; Điều 17: chứng từ điện tử; Điều 18: sửa chứng từ sai.",
+          "Điều 27: sửa sổ kế toán (tách bạch với Điều 18); sổ điện tử dùng phương pháp điều chỉnh.",
+          "Điều 54: tiêu chuẩn kế toán trưởng — 2 năm (đại học trở lên), 3 năm (trung cấp/cao đẳng)."
+        ]
+      }
+    ]
+  },
+
+  "kt-14": {
+    title: "89/VBHN-VPQH (2026) — Văn bản hợp nhất Luật Ngân sách nhà nước",
+    info: {
+      soHieu: "89/VBHN-VPQH",
+      loai: "Văn bản hợp nhất (tra cứu)",
+      ngayBanHanh: "2026",
+      ngayHieuLuc: "Từ năm ngân sách 2026 (một số nội dung từ 01/07/2025)",
+      coQuan: "Văn phòng Quốc hội",
+      hopNhat: "Luật 89/2025 + phần sửa của Luật Dự trữ quốc gia 145/2025",
+    },
+    sections: [
+      {
+        heading: "Mốc hiệu lực và chuyển tiếp",
+        content: [
+          "Hiệu lực: từ năm ngân sách 2026; một số nội dung áp dụng từ 01/07/2025 (Điều 77).",
+          "Chuyển tiếp (Điều 77–78): quyết toán năm 2024 dùng luật cũ; lập dự toán năm 2026 dùng luật mới.",
+          "Khi làm bài phải đọc đúng năm ngân sách và loại nhiệm vụ — đây là bẫy hay gặp."
+        ]
+      },
+      {
+        heading: "Bội chi và phân cấp",
+        content: [
+          "Ngân sách cấp tỉnh được bội chi với điều kiện riêng (Điều 4, 6, 9) — không viết mọi địa phương bị cấm vay.",
+          "Cấp xã không đồng nhất với cấp tỉnh về thẩm quyền bội chi/vay.",
+          "Luật Dự trữ quốc gia 145/2025 (hiệu lực 01/07/2026) sửa một phần — đã hợp nhất trong bản này."
         ]
       }
     ]

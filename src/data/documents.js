@@ -241,10 +241,12 @@ export const v2Documents = [
         links: [
           { label: "Thư viện Pháp luật", url: "https://thuvienphapluat.vn/van-ban/Ke-toan-Kiem-toan/Thong-tu-24-2024-TT-BTC-huong-dan-Che-do-ke-toan-hanh-chinh-su-nghiep-587876.aspx" },
           { label: "Cổng TTĐT Chính phủ", url: "https://xaydungchinhsach.chinhphu.vn/bo-tai-chinh-huong-dan-che-do-ke-toan-hanh-chinh-su-nghiep-119240424062320897.htm" },
+          { label: "TT 46/2025 (sửa TT 24) — Cổng Chính phủ", url: "https://vanban.chinhphu.vn/?classid=0&docid=214192&pageid=27160" },
         ],
-        note: "CỐT LÕI CHUYÊN NGÀNH — chiếm tỷ trọng lớn nhất bài viết 180' và phỏng vấn.",
+        note: "CỐT LÕI CHUYÊN NGÀNH — kiến thức trọng tâm của vòng 2.",
         focus: [
-          "Ban hành 17/4/2024, hiệu lực 01/01/2025; thay thế TT 107/2017; sửa đổi bởi TT 46/2025 từ 01/01/2026.",
+          "Ban hành 17/4/2024, hiệu lực 01/01/2025; thay thế TT 107/2017.",
+          "Sửa đổi bởi TT 46/2025/TT-BTC (hiệu lực 01/07/2025 — không phải 01/01/2026) tại Điều 2 và TT 108/2025/TT-BTC (hiệu lực 01/01/2026) tại Điều 21.",
           "Học theo 5 khối: chứng từ – tài khoản – sổ kế toán – báo cáo quyết toán kinh phí – BCTC.",
           "Hệ thống tài khoản (Phụ lục I): TK trong bảng / ngoài bảng.",
           "Phân biệt 2 loại báo cáo: Báo cáo quyết toán kinh phí vs BCTC.",
@@ -274,6 +276,26 @@ export const v2Documents = [
           "BCTC hợp nhất của địa phương không bao gồm số liệu quỹ nào?",
         ],
       },
+        {
+          id: "kt-12",
+          title: "Thông tư 46/2025/TT-BTC — Sửa đổi, bổ sung TT 24/2024",
+          priority: "hot",
+          topics: "Sửa phạm vi áp dụng TT 24 (Điều 2) sau tổ chức chính quyền địa phương hai cấp",
+          links: [
+            { label: "Cổng Chính phủ", url: "https://vanban.chinhphu.vn/?classid=0&docid=214192&pageid=27160" },
+          ],
+          note: "BỔ SUNG MỚI — văn bản sửa TT 24, hiệu lực 01/07/2025.",
+          focus: [
+            "Ban hành 20/6/2025, hiệu lực 01/07/2025; Điều 2 sửa TT 24/2024.",
+            "Điểm sửa quan trọng: phạm vi áp dụng — bỏ ngoại lệ UBND cấp xã ở điểm a khoản 1 Điều 2 TT 24.",
+            "Đọc TT 24 phải luôn đối chiếu TT 46 (và Điều 21 TT 108) để dùng đúng phiên bản.",
+          ],
+          selfTest: [
+            "TT 46/2025 có hiệu lực từ ngày nào?",
+            "Điều nào của TT 46 sửa TT 24? Nội dung sửa về phạm vi là gì?",
+          ],
+        },
+
     ],
   },
   {
@@ -343,6 +365,26 @@ export const v2Documents = [
           "Phần sửa Luật NSNN trong luật này còn áp dụng cho năm ngân sách 2026 không?",
         ],
       },
+        {
+          id: "kt-13",
+          title: "25/VBHN-VPQH (26/02/2025) — Văn bản hợp nhất Luật Kế toán",
+          priority: "cao",
+          topics: "Tra cứu Luật Kế toán sau sửa đổi bởi Luật 56/2024 — không học bản 2015 nguyên gốc",
+          links: [
+            { label: "Công báo Chính phủ", url: "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-25-vbhn-vpqh-44457.htm" },
+          ],
+          note: "HỢP NHẤT để tra cứu — không phải luật mới, không có ngày hiệu lực riêng.",
+          focus: [
+            "Hợp nhất Luật 88/2015 với phần sửa tại Điều 2 Luật 56/2024.",
+            "Tra cứu: chứng từ Điều 16 (chứng từ điện tử Điều 17); sửa chứng từ sai Điều 18; sửa sổ Điều 27; hành vi cấm Điều 13 (15 khoản); kế toán trưởng Điều 54.",
+            "Thời gian thực tế kế toán trưởng: 2 năm (đại học trở lên), 3 năm (trung cấp/cao đẳng).",
+          ],
+          selfTest: [
+            "Vì sao phải tra cứu bản hợp nhất thay vì chỉ học Luật 88/2015?",
+            "Điều 13 bản hợp nhất có bao nhiêu khoản hành vi cấm?",
+          ],
+        },
+
     ],
   },
   {
@@ -406,6 +448,26 @@ export const v2Documents = [
           "Ngân sách cấp xã phải công khai những nội dung gì?",
         ],
       },
+        {
+          id: "kt-14",
+          title: "89/VBHN-VPQH (2026) — Văn bản hợp nhất Luật Ngân sách nhà nước",
+          priority: "cao",
+          topics: "Tra cứu Luật NSNN 89/2025 sau hợp nhất với Luật Dự trữ quốc gia 145/2025",
+          links: [
+            { label: "Cổng Chính phủ (PDF)", url: "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/89-vbhn-vpqh.pdf" },
+          ],
+          note: "HỢP NHẤT để tra cứu — hiệu lực từ năm ngân sách 2026, một số nội dung từ 01/07/2025.",
+          focus: [
+            "Hợp nhất Luật 89/2025 và phần sửa của Luật Dự trữ quốc gia 145/2025 (hiệu lực 01/07/2026).",
+            "Chuyển tiếp: quyết toán 2024 và lập dự toán 2026 tại Điều 77–78.",
+            "Bội chi: chỉ ngân sách cấp tỉnh được bội chi với điều kiện riêng; không suy mọi địa phương bị cấm vay.",
+          ],
+          selfTest: [
+            "Luật NSNN áp dụng từ năm ngân sách nào? Ngoại lệ chuyển tiếp nào cần nhớ?",
+            "Cấp ngân sách nào được phép bội chi?",
+          ],
+        },
+
     ],
   },
   {
@@ -442,14 +504,15 @@ export const v2Documents = [
           { label: "Thư viện Pháp luật", url: "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-dinh-111-2025-ND-CP-sua-doi-Nghi-dinh-60-2021-ND-CP-co-che-tu-chu-tai-chinh-don-vi-cong-lap-588880.aspx" },
         ],
         focus: [
-          "Ban hành 22/5/2025, hiệu lực 01/7/2025.",
+          "Ban hành 22/5/2025, hiệu lực 07/07/2025, áp dụng từ năm ngân sách 2025.",
           "Sửa khoản 3 Điều 4: thẩm quyền ban hành danh mục DVSNC sử dụng NSNN.",
           "Hoàn thiện quy định về giá dịch vụ sự nghiệp công.",
           "Sửa Điều 35 — giao quyền tự chủ tài chính.",
         ],
         selfTest: [
-          "NĐ 111/2025 có hiệu lực từ ngày nào?",
+          "NĐ 111/2025 có hiệu lực từ ngày nào? Áp dụng từ năm ngân sách nào?",
           "Việc giao quyền tự chủ tài chính cho ĐVSNCL thay đổi thế nào?",
+          "Thời kỳ ổn định của phương án tự chủ là bao nhiêu năm sau NĐ 111?",
         ],
       },
     ],
